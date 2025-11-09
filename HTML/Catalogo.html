@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Palomo</title>
+    <link rel="shortcut icon" href="../IMG/Logo_el diablito.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/Catalogo.css">
+    <link rel="stylesheet" href="../CSS/modal_window_v1.0.0.css">
+</head>
+
+<body>
+
+    <!--ESTE ES EL TITULO-->
+    <header class="Titulo_principal">
+        <h1 class="stk_titulo_pl">DULCERIA EL DIABLITO</h1>
+    </header>
+
+    <!--ESTE ES LA BARRA DE NAVEGACION-->
+    <nav class="navigation">
+        <ul class="Barra">
+            <li class="list"><a href="../HTML/Index.html">Volver al inicio</a></li>
+            <li class="list"><a href="Menu.html">Descuentos</a></li>
+            <li class="list"><a href="producto.html">Novedades</a></li>
+            <li class="list"><a href="producto.html">Electronica</a></li>
+            <div class="Carrito_compras">
+                <img src="../IMG/Carrito_compras.png" alt="Carrito" class="imagen_car">
+            </div>
+
+            <div class="buscar_product">
+                <input type="search" name="" id="" class="search" onclick="toggleIcono()">
+            </div>
+
+            <div class="icon_search" id="caja">
+                <img src="../IMG/Lupa.png" alt="Lupa" class="lupa">
+            </div>
+        </ul>
+    </nav>
+
+    <!--ESTE ES EL ASIDE-->
+    <aside class="aside">
+        <div class="aside-recom" id="aside_recom_2">
+        </div>
+
+        <div class="Search_category_ct">
+            <input type="search" name="" id="" class="Search_category" id="input_busqueda">
+        </div>
+
+        <div class="caja_category" id="category">
+            <img src="../IMG/Lupa.png" alt="Lupa" class="lupa_category">
+        </div>
+
+        <div class="container_buttons">
+            <div class="button_ct1"><a href="" class="sub-t">Botana</a></div>
+            <div class="button_ct2"><a href="" class="sub-t">Dulce tradicional</a></div>
+            <div class="button_ct3"><a href="" class="sub-t">Chocolate</a></div>
+            <div class="button_ct4"><a href="" class="sub-t">Gelatinas</a></div>
+            <div class="button_ct5"><a href="" class="sub-t">Gomitas</a></div>
+            <div class="button_ct6"><a href="" class="sub-t">Materia prima</a></div>
+            <div class="button_ct7"><a href="" class="sub-t">Dulces</a></div>
+        </div>
+
+        <div class="container_quiz">
+            <h1 class="quiz_title_1">¿Cuanto calificas nuestro servicio?</h1>
+            <div class="quiz_rate" id="quiz_rate">
+            </div> 
+            <h1 class="quiz_title_2">¿Cual es tu email?</h1>
+             <input type="text" name="" id="" placeholder="ingresa tu Opinion" class="quiz_op">
+        </div>
+    </aside>
+
+    <!--ESTE ES EL MENU-->
+    <main class="main">
+
+        <h1 class="stk_title">LOS DULCES MAS COMPRADOS</h1>
+
+        <div class="contenedor_producto">
+
+            <div class="box_1">
+                <img src="../IMG/chipotles.jpg" alt="chipotles" class="img_product">
+                <h1 id="stm_info_product" class="nbm_product">chipotles</h1>
+                <h1 class="stp_info_view">
+                    <div id="header" class="stm-header"><a href="#stm-modal-1" class="stm-cta">Ver producto</a></div>
+                </h1>
+            </div>
+
+            <div class="box_2">
+                <img src="../IMG/Hot nuts.jpg" alt="Hot nuts" class="img_product">
+                <h1 id="stm_info_product" class="nbm_product">hot nuts</h1>
+                <h1 class="stp_info_view">
+                    <div id="header" class="stm-header"><a href="#stm-modal-2" class="stm-cta">Dame click</a></div>
+                </h1>
+            </div>
+
+            <div class="box_3">
+                <img src="../IMG/paletas.jpg" alt="paletas" class="img_product">
+                <h1 id="stm_info_product" class="nbm_product">paletas</h1>
+                <h1 class="stp_info_view">
+                    <div id="header" class="stm-header"><a href="#stm-modal-3" class="stm-cta">Dame click</a></div>
+                </h1>
+            </div>
+
+            <div class="box_4">
+                <img src="../IMG/takis.jpg" alt="takis" class="img_product">
+                <h1 id="stm_info_product" class="nbm_product">takis</h1>
+                <h1 class="stp_info_view">
+                    <div id="header" class="stm-header"><a href="#stm-modal-4" class="stm-cta">Ver producto</a></div>
+                </h1>
+            </div>
+
+            <div class="box_5">
+                <img src="../IMG/kacang.jpg" alt="Kacang" class="img_product">
+                <h1 id="stm_info_product" class="nbm_product">kacang</h1>
+                <h1 class="stp_info_view">
+                    <div id="header" class="stm-header"><a href="#stm-modal-5" class="stm-cta">Ver producto</a></div>
+                </h1>
+            </div>
+
+            <div class="box_6">
+                <img src="../IMG/Aciduladitos.jpg" alt="aciduladitos" class="img_product">
+                <h1 id="stm_info_product" class="nbm_product">aciduladitos</h1>
+                <h1 class="stp_info_view">
+                    <div id="header" class="stm-header"><a href="#stm-modal-6" class="stm-cta">Ver producto</a></div>
+                </h1>
+            </div>
+
+            <div class="box_7">
+                <img src="../IMG/big mix.jpg" alt="big_mix" class="img_product">
+                <h1 id="stm_info_product" class="nbm_product">big mix</h1>
+                <h1 class="stp_info_view">
+                    <div id="header" class="stm-header"><a href="#stm-modal-7" class="stm-cta">Ver producto</a></div>
+                </h1>
+            </div>
+
+            <div class="box_8">
+                <img src="../IMG/rockaleta.jpg" alt="rockaleta" class="img_product">
+                <h1 id="stm_info_product" class="nbm_product">rockaleta</h1>
+                <h1 class="stp_info_view">
+                    <div id="header" class="stm-header"><a href="#stm-modal-8" class="stm-cta">Ver producto</a></div>
+                </h1>
+            </div>
+
+            <div class="box_9">
+                <img src="../IMG/big mix.jpg" alt="big_mix" class="img_product">
+                <h1 id="stm_info_product" class="nbm_product">big mix</h1>
+                <h1 class="stp_info_view">
+                    <div id="header" class="stm-header"><a href="#stm-modal-9" class="stm-cta">Ver producto</a></div>
+                </h1>
+            </div>
+
+            <div class="box_10">
+                <img src="../IMG/big mix.jpg" alt="big_mix" class="img_product">
+                <h1 id="stm_info_product" class="nbm_product">big mix</h1>
+                <h1 class="stp_info_view">
+                    <div id="header" class="stm-header"><a href="#stm-modal-10" class="stm-cta">Ver producto</a></div>
+                </h1>
+            </div>
+        </div>
+
+        <div id="stm-modal-1" class="stm-modal">
+            <div class="stm-modal-container">
+                <div class="stm-modal-picture">
+                    <img src="../IMG/chipotles.jpg" alt="hot nuts" class="stm-modal-img">
+                </div>
+
+                <h2 class="stm-modal-title">CHIPOTLES BARCEL
+                    <span class="stm-modal-title stm-modal-title-bold"></span>
+                </h2>
+
+                <p class="stm-modal-paragraph">
+                    Los Chipotles de Barcel son botanas de maíz inflado con el distintivo sabor a chile chipotle y
+                    queso. Tienen forma de chile sin tallo, un color rojizo y una textura crujiente con un toque picante
+                    y ahumado. Son un snack popular en México, disponibles en varias presentaciones de peso y se
+                    distribuyen en tiendas
+                </p>
+
+                <a href="#" class="stm-modal-close">Cerrar</a>
+            </div>
+        </div>
+
+        <div id="stm-modal-2" class="stm-modal">
+            <div class="stm-modal-container">
+                <div class="stm-modal-picture">
+                    <img src="../IMG/Hot nuts.jpg" alt="hot nuts" class="stm-modal-img">
+                </div>
+
+                <h2 class="stm-modal-title">Hot Nuts
+                    <span class="stm-modal-title stm-modal-title-bold"></span>
+                </h2>
+
+                <p class="stm-modal-paragraph">
+                    Son una botana de cacahuates cubiertos con un sabor picosito y de limón. Son una opción de snack
+                    crujiente para acompañar bebidas o para añadir a mesas de botanas. Se pueden encontrar en diversas
+                    presentaciones y existen variantes como los Hot Nuts Multintenso y Fuego.
+                </p>
+
+                <a href="#" class="stm-modal-close">Cerrar</a>
+            </div>
+        </div>
+
+        <div id="stm-modal-3" class="stm-modal">
+            <div class="stm-modal-container">
+                <div class="stm-modal-picture">
+                    <img src="../IMG/paletas.jpg" alt="paletas" class="stm-modal-img">
+                </div>
+
+                <h2 class="stm-modal-title">Paletas
+                    <span class="stm-modal-title stm-modal-title-bold"></span>
+                </h2>
+
+                <p class="stm-modal-paragraph">
+                    Son dulces duros montados en un palillo, disponibles en una amplia variedad de sabores frutales y colores, ideales para refrescar.
+                </p>
+
+                <a href="#" class="stm-modal-close">Cerrar</a>
+            </div>
+        </div>
+
+        <div id="stm-modal-4" class="stm-modal">
+            <div class="stm-modal-container">
+                <div class="stm-modal-picture">
+                    <img src="../IMG/takis.jpg" alt="takis" class="stm-modal-img">
+                </div>
+
+                <h2 class="stm-modal-title">TAKIS
+                    <span class="stm-modal-title stm-modal-title-bold"></span>
+                </h2>
+
+                <p class="stm-modal-paragraph">
+                    Botanas de tortilla de maíz enrollada y frita, famosas por su intenso sabor a chile y limón, y su extrema crocancia.
+                </p>
+
+                <a href="#" class="stm-modal-close">Cerrar</a>
+            </div>
+        </div>
+
+        <div id="stm-modal-5" class="stm-modal">
+            <div class="stm-modal-container">
+                <div class="stm-modal-picture">
+                    <img src="../IMG/kacang.jpg" alt="kacang" class="stm-modal-img">
+                </div>
+
+                <h2 class="stm-modal-title">KACANG
+                    <span class="stm-modal-title stm-modal-title-bold"></span>
+                </h2>
+
+                <p class="stm-modal-paragraph">
+                    Cacahuates fritos con una capa crujiente y salada, perfectos como snack o acompañamiento de bebidas, con un distintivo sabor a especias.
+                </p>
+
+                <a href="#" class="stm-modal-close">Cerrar</a>
+            </div>
+        </div>
+
+        <div id="stm-modal-6" class="stm-modal">
+            <div class="stm-modal-container">
+                <div class="stm-modal-picture">
+                    <img src="../IMG/Aciduladitos.jpg" alt="aciduladitos" class="stm-modal-img">
+                </div>
+
+                <h2 class="stm-modal-title">ACIDULADITOS
+                    <span class="stm-modal-title stm-modal-title-bold"></span>
+                </h2>
+
+                <p class="stm-modal-paragraph">
+                    Son un dulce ácido y blando, perfectos para quienes disfrutan de sabores intensos y refrescantes.
+                </p>
+
+                <a href="#" class="stm-modal-close">Cerrar</a>
+            </div>
+        </div>
+
+        <div id="stm-modal-7" class="stm-modal">
+            <div class="stm-modal-container">
+                <div class="stm-modal-picture">
+                    <img src="../IMG/big mix.jpg" alt="big mix" class="stm-modal-img">
+                </div>
+
+                <h2 class="stm-modal-title">BIG MIX
+                    <span class="stm-modal-title stm-modal-title-bold"></span>
+                </h2>
+
+                <p class="stm-modal-paragraph">
+                    Una bolsa que contiene una mezcla variada de diferentes tipos de botanas, ofreciendo una combinación de sabores salados, picosos y crujientes.
+                </p>
+
+                <a href="#" class="stm-modal-close">Cerrar</a>
+            </div>
+        </div>
+
+        <div id="stm-modal-8" class="stm-modal">
+            <div class="stm-modal-container">
+                <div class="stm-modal-picture">
+                    <img src="../IMG/rockaleta.jpg" alt="rockaleta" class="stm-modal-img">
+                </div>
+
+                <h2 class="stm-modal-title">ROCALETA
+                    <span class="stm-modal-title stm-modal-title-bold"></span>
+                </h2>
+
+                <p class="stm-modal-paragraph">
+                    Una paleta de caramelo de capas múltiples, conocida por su centro de chicle y su sabor que va de picante a dulce en cada nivel.
+                </p>
+
+                <a href="#" class="stm-modal-close">Cerrar</a>
+            </div>
+        </div>
+
+        <div id="stm-modal-9" class="stm-modal">
+            <div class="stm-modal-container">
+                <div class="stm-modal-picture">
+                    <img src="../IMG/big mix.jpg" alt="big mix" class="stm-modal-img">
+                </div>
+
+                <h2 class="stm-modal-title">BIG MIX
+                    <span class="stm-modal-title stm-modal-title-bold"></span>
+                </h2>
+
+                <p class="stm-modal-paragraph">
+                    Una bolsa que contiene una mezcla variada de diferentes tipos de botanas, ofreciendo una combinación de sabores salados, picosos y crujientes.
+                </p>
+
+                <a href="#" class="stm-modal-close">Cerrar</a>
+            </div>
+        </div>
+
+        <div id="stm-modal-10" class="stm-modal">
+            <div class="stm-modal-container">
+                <div class="stm-modal-picture">
+                    <img src="../IMG/big mix.jpg" alt="big mix" class="stm-modal-img">
+                </div>
+
+                <h2 class="stm-modal-title">BIG MIX
+                    <span class="stm-modal-title stm-modal-title-bold"></span>
+                </h2>
+
+                <p class="stm-modal-paragraph">
+                    Una bolsa que contiene una mezcla variada de diferentes tipos de botanas, ofreciendo una combinación de sabores salados, picosos y crujientes.
+                </p>
+
+                <a href="#" class="stm-modal-close">Cerrar</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!--ESTE ES EL PIE DE PAGINA-->
+    <footer class="footer">
+        <h1 class="stk_copyright">Copyright todos los derechos recervados a FAMSDAM Ing Co Ltd</h1>
+    </footer>
+
+    <script src="../JS/Catalogo.js"></script>
+    <script src="../JS/Frases random.js"></script>
+    <script src="../JS/modal_window_v1.0.0.js"></script>
+</body>
+
+</html>

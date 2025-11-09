@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+}
+
+/* NO TOCAR NI ALTERAR NO SEAS WEY*/
+body {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr;
+    grid-template-rows: 60px 50px 577px 46px;
+}
+
+/* ESTA ES LA FUCKING PALETA DE COLORES DE LA PAGINA*/
+:root {
+    --color-cabecera: #cc7478;
+    --color-nav: #d99381;
+    --color-aside: #e2c7a8;
+    --color-menu: #ededdd;
+    --color-piePag: #f3f3f3;
+    --color-boton_1: #c49df9;
+    --color-titulo-frase: #ffc88b;
+    --color-hover-1: #96607e;
+    --color-caja_product: #fffbcd;
+    --color-stp-view: #ff0000;
+    --color-titulo-prin: #ffffff;
+    --font-producto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*ESTE ES EL TITULO DE LA PAGINA PRINCIPAL*/
+.Titulo_principal {
+    grid-column: 1/9;
+    background-color: var(--color-cabecera);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-titulo-prin);
+    text-align: center;
+}
+
+/*
+ESTA ES LA PARTE DEL NAV-BAR O BARRA DE MENU Y ES EL INICIO
+*/
+
+/*ESTE ES EL NAV BAR*/
+.navigation {
+    grid-column: 1/9;
+    background-color: var(--color-nav);
+}
+
+.Barra {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-nav);
+    position: relative;
+    bottom: 0;
+
+}
+
+.list {
+    float: left;
+}
+
+.list a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 23px;
+    text-decoration: none;
+    height: 50px;
+}
+
+.list a:hover {
+    background-color: var(--color-hover-1);
+}
+
+.Carrito_compras {
+    margin-top: 4px;
+    margin-left: 1469px;
+}
+
+.imagen_car {
+    height: 40px;
+    width: 40px;
+}
+
+.buscar_product {
+    margin-top: -34px;
+    margin-left: 950px;
+}
+
+.search {
+    width: 500px;
+    height: 30px;
+    border-radius: 90px
+}
+
+.icon_search {
+    margin-top: -23px;
+    margin-left: 1410px;
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.lupa {
+    height: 15px;
+    width: 15px;
+
+}
+
+/*
+ESTA ES LA PARTE DEL NAV-BAR O BARRA DE MENU Y ES EL FINAL
+*/
+
+/*
+ESTA ES LA PARTE DEL ASIDE Y ES EL INICIO
+*/
+
+/*ESTE ES EL ASIDE*/
+.aside {
+    grid-column: 1/2;
+    grid-row: 3/10;
+    background-color: var(--color-aside);
+}
+
+.container_scroll{
+    overflow-y: auto;
+    max-height: 577px;
+}
+
+.scroll_container {
+    display: inline;
+    flex-wrap: nowrap;
+}
+
+.scrolling_card {
+    flex: 0 0 auto;
+    margin: 10px;
+    width: 235px;
+    height: 140px;
+    text-align: center;
+}
+
+.container_scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scrolling_buttons_container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.span_container {
+    background-color: var(--color-caja_product);
+    display: grid;
+    grid-template-columns: repeat(118, 2px);
+    grid-template-rows: repeat(140, 1px);
+    width: 235px;
+    height: 140px;
+    border-radius: 4px;
+}
+
+.span_title {
+    font-size: 12px;
+    grid-column: 68;
+    grid-row: 10/12;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.span_img {
+    width: 120px;
+    height: 130px;
+    border-radius: 10px;
+    grid-column: 4;
+    grid-row: 5/10;
+}
+
+.span_btn {
+    grid-column: 72;
+    grid-row: 100;
+}
+
+.span_like {
+    width: 40px;
+    height: 40px;
+    grid-column: 67;
+    grid-row: 45;
+}
+
+.span_dislike {
+    width: 28px;
+    height: 28px;
+    grid-column: 98;
+    grid-row: 60;
+}
+
+.aside_recom {
+    background-color: var(--color-titulo-frase);
+    height: 45px;
+    width: 254px;
+}
+
+.titulo_recom {
+    text-align: center;
+    font-size: 15px;
+    color: var(--color-titulo-prin);
+}
+
+/*
+ESTA ES LA PARTE DEL ASIDE Y ES EL FINAL
+*/
+
+
+/*
+ESTA ES LA PARTE DEL MAIN Y ES EL INICIO
+*/
+
+/*ESTE ES EL MAIN*/
+.main {
+    grid-column: 2/9;
+    background-color: var(--color-menu);
+}
+
+.contenedor_main{
+    grid-column: 2/9;
+    background-color: var(--color-menu);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.carta_presentacion {
+    background-color: var(--color-titulo-frase);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.titulo_carta {
+    font-family: var(--font-producto);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-hover-1);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.texto_carta {
+    font-family: var(--font-producto);
+    font-size: 14px;
+    color: var(--color-hover-1);
+    line-height: 1.5;
+}
+
+.seccion_marcas,
+.seccion_tamarindo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.titulo_seccion {
+    font-family: var(--font-producto);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-hover-1);
+    text-transform: uppercase;
+}
+
+.container_marcas {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.marca_circulo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-caja_product);
+    border: 2px solid var(--color-hover-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.marca_circulo.medio {
+    border-radius: 50% 50% 0 0;
+    height: 50px;
+}
+
+.logo_marca {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.container_tamarindo {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto_tamarindo {
+    width: 200px;
+    height: 80px;
+    background-color: var(--color-caja_product);
+    border: 2px solid var(--color-hover-1);
+    border-radius: 15px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.producto_tamarindo h3 {
+    font-family: var(--font-producto);
+    font-size: 14px;
+    color: var(--color-hover-1);
+    margin-bottom: 5px;
+}
+
+.producto_tamarindo p {
+    font-family: var(--font-producto);
+    font-size: 11px;
+    color: var(--color-hover-1);
+}
+
+.contenedor_main::-webkit-scrollbar {
+    display: none;
+}
+/*
+ESTA ES LA PARTE DEL MAIN Y ES EL FINAL
+*/
+
+/*
+ESTE ES EL FOOTER Y ES EL INICIO
+/*
+
+/*ESTE ES EL PIE DE PAGINA*/
+.footer {
+    grid-column: 2/9;
+    background-color: var(--color-piePag);
+}
+
+.stk_copyright {
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--font-producto);
+    color: var(--color-titulo-prin);
+}

@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+}
+
+/* NO TOCAR NI ALTERAR NO SEAS WEY*/
+body {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr;
+    grid-template-rows: 60px 50px 577px 46px;
+}
+
+/* ESTA ES LA FUCKING PALETA DE COLORES DE LA PAGINA*/
+:root {
+    --color-cabecera: #cc7478;
+    --color-nav: #d99381;
+    --color-aside: #e2c7a8;
+    --color-menu: #ededdd;
+    --color-piePag: #f3f3f3;
+    --color-boton_1: #c49df9;
+    --color-titulo-frase: #ffc88b;
+    --color-hover-1: #96607e;
+    --color-btn-category: #9e5e4f;
+    --color-caja_product: #fffbcd;
+    --color-stp-view: #ff0000;
+    --color-texto-general: #ffffff;
+    --color-titulo-prin: #ffffff;
+    --font-producto: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*ESTE ES EL TITULO DE LA PAGINA PRINCIPAL*/
+.Titulo_principal {
+    grid-column: 1/9;
+    background-color: var(--color-cabecera);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-titulo-prin);
+    justify-content: center;
+}
+
+.stk_logo {
+    height: 50px;
+    width: 50px;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+
+.stk_titulo_pl {
+    font-size: 40px;
+    text-align: center;
+}
+
+/*
+ESTA ES LA PARTE DEL NAV-BAR O BARRA DE MENU Y ES EL INICIO
+*/
+
+/*ESTE ES EL NAV BAR*/
+.navigation {
+    grid-column: 1/9;
+    background-color: var(--color-nav);
+}
+
+.Barra {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-nav);
+    position: relative;
+    bottom: 0;
+
+}
+
+.list {
+    float: left;
+}
+
+.list a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 23px;
+    text-decoration: none;
+    height: 50px;
+}
+
+.list a:hover {
+    background-color: var(--color-hover-1);
+}
+
+.Carrito_compras {
+    margin-top: 4px;
+    margin-left: 1469px;
+}
+
+.imagen_car {
+    height: 40px;
+    width: 40px;
+}
+
+.buscar_product {
+    margin-top: -34px;
+    margin-left: 950px;
+}
+
+.search {
+    width: 500px;
+    height: 30px;
+    border-radius: 90px
+}
+
+.icon_search {
+    margin-top: -23px;
+    margin-left: 1410px;
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.lupa {
+    height: 15px;
+    width: 15px;
+
+}
+
+/*
+ESTA ES LA PARTE DEL NAV-BAR O BARRA DE MENU Y ES EL FINAL
+*/
+
+/*
+ESTA ES LA PARTE DEL ASIDE Y ES EL INICIO
+*/
+
+/*ESTE ES EL ASIDE*/
+.aside {
+    grid-column: 1/2;
+    grid-row: 3/10;
+    background-color: var(--color-aside);
+    display: grid;
+    grid-template-columns: repeat(254, 1px);
+    grid-template-rows: repeat(89, 7px);
+}
+
+.Search_category_ct {
+    grid-row: 13;
+    grid-column: 16;
+}
+
+.Search_category {
+    height: 30px;
+    width: 219px;
+    border-radius: 10px;
+}
+
+.caja_category {
+    margin-top: 88px;
+    margin-left: 195px;
+}
+
+.lupa_category {
+    height: 15px;
+    width: 15px;
+}
+
+.container_buttons {
+    grid-row: 19/63;
+    grid-column: 16/235;
+    display: grid;
+    grid-template-columns: repeat(220, 1px);
+    grid-template-rows: repeat(299, 1px);
+}
+
+.button_ct1 {
+    background-color: var(--color-btn-category);
+    grid-row: 1/51;
+    grid-column: 1/ 254;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_ct2 {
+    background-color: var(--color-btn-category);
+    grid-row: 44/86;
+    grid-column: 1/ 254;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_ct3 {
+    background-color: var(--color-btn-category);
+    grid-row: 86/129;
+    grid-column: 1/ 254;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_ct4 {
+    background-color: var(--color-btn-category);
+    grid-row: 129/172;
+    grid-column: 1/ 254;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_ct5 {
+    background-color: var(--color-btn-category);
+    grid-row: 172/215;
+    grid-column: 1/ 254;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_ct6 {
+    background-color: var(--color-btn-category);
+    grid-row: 215/258;
+    grid-column: 1/ 254;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_ct7 {
+    background-color: var(--color-btn-category);
+    grid-row: 258/306;
+    grid-column: 1/254;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sub-t {
+    margin-top: 5px;
+    font-size: 17px;
+    text-decoration: none;
+    color: var(--color-texto-general);
+}
+
+.button_ct1:hover {
+    background-color: #ffd59a;
+}
+
+.button_ct2:hover {
+    background-color: #ffd59a;
+}
+
+.button_ct3:hover {
+    background-color: #ffd59a;
+}
+
+.button_ct4:hover {
+    background-color: #ffd59a;
+}
+
+.button_ct5:hover {
+    background-color: #ffd59a;
+}
+
+.button_ct6:hover {
+    background-color: #ffd59a;
+}
+
+.button_ct7:hover {
+    background-color: #ffd59a;
+}
+
+.container_quiz {
+    background-color: var(--color-btn-category);
+    grid-row: 65/88;
+    grid-column: 16/235;
+    display: grid;
+    grid-template-columns: repeat(220, 1px);
+    grid-template-rows: repeat(160, 1px)
+}
+
+.quiz_title_1 {
+    font-size: 13px;
+    color: var(--color-texto-general);
+    text-align: justify;
+    grid-column: 11/203;
+    grid-row: 8;
+}
+
+.quiz_title_2 {
+    font-size: 13px;
+    color: var(--color-texto-general);
+    text-align: justify;
+    grid-column: 11/200;
+    grid-row: 78;
+}
+
+.quiz_rate {
+    grid-column: 11/203;
+    grid-row: 45/73;
+    cursor: pointer;
+}
+
+.quiz_op {
+    grid-column: 11;
+    grid-row: 100;
+    width: 192px;
+    height: 20px;
+}
+
+.star-icon{
+    display: inline-block;
+    margin: 5px;
+}
+
+.quiz_img_star{
+    width: 23px;
+    height: 23px;
+}
+
+.aside-recom {
+    background-color: var(--color-titulo-frase);
+    height: 45px;
+    width: 254px;
+    display: grid;
+    grid-template-columns: repeat(254, 1px);
+    grid-template-rows: repeat(45, 1px);
+}
+
+.titulo_recom {
+    text-align: center;
+    font-size: 17px;
+    grid-row: 10;
+    grid-column: 10/250;
+    color: var(--color-titulo-prin);
+}
+
+/*
+ESTA ES LA PARTE DEL ASIDE Y ES EL FINAL
+*/
+
+
+/*
+ESTA ES LA PARTE DEL MAIN Y ES EL INICIO
+*/
+
+/*ESTE ES EL MAIN*/
+.main {
+    grid-column: 2/9;
+    background-color: var(--color-menu);
+}
+
+.contenedor_producto {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-rows: repeat(23, 25px);
+    margin-top: -56px;
+}
+
+.box_1 {
+    background-color: var(--color-caja_product);
+    margin-top: 70px;
+    margin-left: 34px;
+    grid-row: 1/13;
+}
+
+.box_2 {
+    background-color: var(--color-caja_product);
+    margin-top: 70px;
+    margin-left: 20px;
+    grid-row: 1/13;
+}
+
+.box_3 {
+    background-color: var(--color-caja_product);
+    margin-top: 70px;
+    margin-left: 20px;
+    grid-row: 1/13;
+}
+
+.box_4 {
+    background-color: var(--color-caja_product);
+    margin-top: 70px;
+    margin-left: 20px;
+    grid-row: 1/13;
+}
+
+.box_5 {
+    background-color: var(--color-caja_product);
+    margin-top: 70px;
+    margin-left: 20px;
+    grid-row: 1/13;
+}
+
+.box_6 {
+    background-color: var(--color-caja_product);
+    margin-top: 40px;
+    margin-left: 34px;
+    grid-row: 13/24;
+}
+
+.box_7 {
+    background-color: var(--color-caja_product);
+    margin-top: 40px;
+    margin-left: 20px;
+    grid-row: 13/24;
+}
+
+.box_8 {
+    background-color: var(--color-caja_product);
+    margin-top: 40px;
+    margin-left: 20px;
+    grid-row: 13/24;
+}
+
+.box_9 {
+    background-color: var(--color-caja_product);
+    margin-top: 40px;
+    margin-left: 20px;
+    grid-row: 13/24;
+}
+
+.box_10 {
+    background-color: var(--color-caja_product);
+    margin-top: 40px;
+    margin-left: 20px;
+    grid-row: 13/24;
+}
+
+.img_product {
+    height: 140px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.stp_info_view {
+    font-size: 10px;
+    color: var(--color-stp-view);
+    margin-top: 14px;
+    text-align: center;
+}
+
+.nbm_product {
+    font-size: 25px;
+    text-align: center;
+    font-family: var(--font-producto);
+}
+
+.stk_title {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--color-titulo-prin);
+}
+
+/*
+ESTA ES LA PARTE DEL MAIN Y ES EL FINAL
+*/
+
+/*
+ESTA ES LA PARTE DEL FOOTER Y ES EL INICIO
+*/
+
+/*ESTE ES EL PIE DE PAGINA*/
+.footer {
+    grid-column: 2/9;
+    background-color: var(--color-piePag);
+}
+
+.stk_copyright {
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--font-producto);
+    color: var(--color-titulo-prin);
+}

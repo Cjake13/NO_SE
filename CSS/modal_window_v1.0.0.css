@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-boton_1: #558a9e;
+    --color-boton_2: #76a4ad;
+    --color-boton_3: #b0cfd1;
+    --color-boton_4: #cc7478;
+    --color-boton_5: #c49df9;
+    --color-boton_6: #1b769b;
+    --color-fondo: #ddf5ef;
+    --color-fondo_1: #e2c7a8;
+    --color-fondo-modal: rgba(248 249 249 / 0.3);
+    --color-fondo-modal_1: rgba(237 237 221 / 0.4);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*ESTA ES LA VENTANA MODAL 1*/
+/* ESTE ES FUCKING BOTON DE LA MODAL ¡NO TOCAR!*/
+.stm-button {
+    padding: 10px 15px;
+    background-color: #ffe5f4;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    text-decoration: none;
+    margin-left: 900px;
+}
+
+/* AQUI FINALIZA EL FUCKING BOTON DE LA MODAL ¡NO TOCAR!*/
+
+/* ESTE LA FUCKING VENTANA DE LA MODAL ¡NO TOCAR!*/
+.stm-modal_bg {
+    display: flex;
+    --opacity: 0;
+    --pointer: none;
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity .5s;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-fondo-modal);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.stm-modal_bg:target {
+    --opacity: 1;
+    --pointer: unset;
+}
+
+.stm-modal-container_win {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: var(--color-fondo);
+    border-radius: 4px;
+}
+
+.stm-modal_bg:target .stm-modal-picture_win {
+    animation: scale .5s 1.5s;
+}
+
+.stm-modal_win:target .stm-modal-container_win {
+    animation: show 1s .5 backwards;
+}
+
+@keyframes show {
+    0% {
+        transition: translateY(-150vh);
+    }
+}
+
+.stm-modal-picture_win {
+    width: 90%;
+    margin-left: auto;
+    max-width: 400px;
+}
+
+.stm-modal-img_win {
+    width: 250px;
+    height: 250px;
+    display: block;
+}
+
+.stm-modal-title_win {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.stm-modal-title-bold_win {
+    font-weight: 700;
+}
+
+.stm-modal-paragraph_win {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+.stm-modal-close_win {
+    padding: 7px 10px;
+    background-color: var(--color-boton_1);
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+
+.stm-background-close {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*ESTA ES LA VENTANA MODAL 2*/
+
+.stm-cta{
+  margin: auto;
+  background-color: var(--color-boton_6);
+  color: beige;
+  text-decoration: none;
+  padding: 1.2em 3em;
+  border-radius: .4em;
+}
+
+.stm-modal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-fondo-modal);
+  display: flex;
+
+  --opacity: 0;
+  --pointer: none;
+
+  opacity: var(--opacity);
+  pointer-events: var(--pointer);
+  transition: opacity .5s;
+}
+
+.stm-modal:target{
+  --opacity: 1;
+  --pointer: unset;
+}
+
+.stm-modal-container{
+  margin: auto;
+  background-color: var(--color-fondo);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
+  overflow: hidden;
+  text-align: center;
+  padding: 2.5em 1.5em;
+  border-radius: 1em;
+}
+
+.stm-modal:target .stm-modal-picture{
+  animation: scale .5s 1.5s;
+}
+
+.stm-modal:target .stm-modal-container{
+  animation: show 1s .5 backwards;
+}
+
+@keyframes show {
+  0%{
+    transition: translateY(-150vh);
+  }
+}
+
+.stm-modal-picture{
+  width: 90%;
+  margin-left: auto;
+  max-width: 400px;
+}
+
+.stm-modal-img{
+  width: 250px;
+  height: 250px;
+  display: block;
+}
+
+.stm-modal-title{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.stm-modal-title-bold{
+  font-weight: 700;
+}
+
+.stm-modal-paragraph{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.stm-modal-close{
+  display: inline-block;
+  border: 1px solid var(--color-boton_5);
+  padding: 1em 2em;
+  text-decoration: none;
+  color: var(--color-boton_4);
+  border-radius: 0.4em;
+  margin-left: 350px;
+}
+
+/*
+ESTILOS DE BOTONES
+*/
+
+.stm-style-1{
+    background-color: var(--color-boton_2);
+    font-size: 10px;
+    padding: 12px 3px;
+    border-radius: 3px;
+    color: #ffffff;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+@media (max-width:600px) {
+    .stm-modal-container_win {
+        font-size: 1.7rem;
+    }
+
+    .stm-modal-title_win {
+        font-size: 1.7rem;
+    }
+}
+
+/* AQUI FINALIZA LA FUCKING VENTANA DE LA MODAL ¡NO TOCAR!*/
