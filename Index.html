@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Palomo</title>
+    <link rel="shortcut icon" href="../IMG/Logo_el diablito.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/Menu.css">
+    <link rel="stylesheet" href="../CSS/modal_window_v1.0.0.css">
+</head>
+
+<body>
+
+    <!--ESTE ES EL TITULO-->
+    <header class="Titulo_principal">
+        <h1 class="stk_titulo_pl">DULCERIA EL DIABLITO</h1>
+    </header>
+
+    <!--ESTE ES LA BARRA DE NAVEGACION-->
+    <nav class="navigation">
+        <ul class="Barra">
+            <li class="list"><a href="../HTML/Catalogo.html">Productos</a></li>
+            
+            <div class="Carrito_compras">
+                <img src="../IMG/Carrito_compras.png" alt="Carrito" class="imagen_car">
+            </div>
+
+            <div class="buscar_product">
+                <input type="search" name="" id="" class="search" onclick="toggleIcono()">
+            </div>
+
+            <div class="icon_search" id="caja">
+                <img src="../IMG/Lupa.png" alt="Lupa" class="lupa">
+            </div>
+        </ul>
+    </nav>
+
+    <!--ESTE ES EL ASIDE-->
+    <aside class="aside">
+        <div class="aside_recom" id="aside_recom_1">
+        </div>
+
+        <div id="show_product" class="container_scroll">
+            <div class="scroll_container" id="scroll_container">
+            </div>
+        </div>
+    </aside>
+
+    <main class="main">
+        <div class="contenedor_main">
+            <div class="carta_presentacion">
+                <h2 class="titulo_carta">CALIDAD Y BUEN PRECIO EN DULCERIA EL DIABLITO</h2>
+                <p class="texto_carta">Bienvenidos a nuestra dulcería, donde encontrarás los mejores dulces y botanas con la mejor calidad y los mejores precios. Ofrecemos una amplia variedad de productos para todos los gustos.</p>
+            </div>
+
+            <div class="seccion_marcas">
+                <h2 class="titulo_seccion">Marcas</h2>
+                <div class="container_marcas">
+                    <div class="marca_circulo">
+                        <img src="../IMG/barcel_logo.png" alt="Barcel" class="logo_marca">
+                    </div>
+                    <div class="marca_circulo">
+                        <img src="../IMG/la_rosa_logo.png" alt="La Rosa" class="logo_marca">
+                    </div>
+                    <div class="marca_circulo">
+                        <img src="../IMG/sonric´s_logo.jpg" alt="Sonric's" class="logo_marca">
+                    </div>
+                    <div class="marca_circulo">
+                        <img src="../IMG/vero_logo.jpg" alt="Vero" class="logo_marca">
+                    </div>
+                    <div class="marca_circulo">
+                        <img src="../IMG/lucky_gum_logo.png" alt="Lucky Gum" class="logo_marca">
+                    </div>
+                    <div class="marca_circulo">
+                        <img src="../IMG/kacang_logo.jpg" alt="Kacang" class="logo_marca">
+                    </div>
+                    <div class="marca_circulo medio">
+                        <img src="../IMG/Logo_el diablito.jpeg" alt="El Diablito" class="logo_marca">
+                    </div>
+                </div>
+            </div>
+
+            <div class="seccion_tamarindo">
+                <h2 class="titulo_seccion">Producto de tamarindo</h2>
+                <div class="container_tamarindo">
+                    <div class="producto_tamarindo">
+                        <h3>Pelones</h3>
+                        <p>Dulce de tamarindo con chile</p>
+                    </div>
+                    <div class="producto_tamarindo">
+                        <h3>Pulparindo</h3>
+                        <p>Pulpa de tamarindo natural</p>
+                    </div>
+                    <div class="producto_tamarindo">
+                        <h3>Pelón Pelo Rico</h3>
+                        <p>Tamarindo con chile y sal</p>
+                    </div>
+                    <div class="producto_tamarindo">
+                        <h3>Rellerindos</h3>
+                        <p>Tamarindo relleno de chile</p>
+                    </div>
+                    <div class="producto_tamarindo">
+                        <h3>Vero Mango</h3>
+                        <p>Mezcla de tamarindo y mango</p>
+                    </div>
+                    <div class="producto_tamarindo">
+                        <h3>Tamarindos</h3>
+                        <p>Tamarindo natural en bolsa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--ESTE ES EL PIE DE PAGINA-->
+    <footer class="footer">
+        <h1 class="stk_copyright">Copyright todos los derechos recervados a FAMSDAM Ing Co Ltd</h1>
+    </footer>
+
+    <script src="../JS/Menu.js"></script>
+    <script src="../JS/Frases random.js"></script>
+</body>
+
+</html>
