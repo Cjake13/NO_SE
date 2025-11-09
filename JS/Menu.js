@@ -28,7 +28,7 @@ let contadorGeneral = 0;
 let contadorGeneralModal = 0;
 var productos = [
     {
-        imagen: "../proyecto palomo dul/IMG/chipotles.jpg",
+        imagen: "proyecto palomo dul/IMG/chipotles.jpg",
         nombre_producto: "CHIPOTLES",
         texto_alternativo: "CHIPOTLES",
         descripcion_producto: "Los Chipotles de Barcel son botanas de maíz inflado con el distintivo sabor a chile chipotle y queso. Tienen forma de chile sin tallo, un color rojizo y una textura crujiente con un toque picante y ahumado Son un snack popular en México, disponibles en varias presentaciones de peso y se distribuyen en tiendas"
