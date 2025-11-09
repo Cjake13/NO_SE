@@ -28,49 +28,49 @@ let contadorGeneral = 0;
 let contadorGeneralModal = 0;
 var productos = [
     {
-        imagen: "proyecto palomo dul/IMG/chipotles.jpg",
+        imagen: "/IMG/chipotles.jpg",
         nombre_producto: "CHIPOTLES",
         texto_alternativo: "CHIPOTLES",
         descripcion_producto: "Los Chipotles de Barcel son botanas de maíz inflado con el distintivo sabor a chile chipotle y queso. Tienen forma de chile sin tallo, un color rojizo y una textura crujiente con un toque picante y ahumado Son un snack popular en México, disponibles en varias presentaciones de peso y se distribuyen en tiendas"
     },
     {
-        imagen: "../proyecto palomo dul/IMG/Hot nuts.jpg",
+        imagen: "/IMG/Hot nuts.jpg",
         nombre_producto: "HOT NUTS",
         texto_alternativo: "HOT NUTS",
         descripcion_producto: "son una botana de cacahuates cubiertos con un sabor picosito y de limón. Son una opción de snack crujiente para acompañar bebidas o para añadir a mesas de botanas. Se pueden encontrar en diversaspresentaciones y existen variantes como los Hot Nuts Multintenso y Fuego."
     },
     {
-        imagen: "../proyecto palomo dul/IMG/Aciduladitos.jpg",
+        imagen: "/IMG/Aciduladitos.jpg",
         nombre_producto: "ACIDULADITOS",
         texto_alternativo: "ACIDULADITOS",
         descripcion_producto: "SON UN DULCE ACIDO Y BLANDO "
     },
     {
-        imagen: "../proyecto palomo dul/IMG/paletas.jpg",
+        imagen: "/IMG/paletas.jpg",
         nombre_producto: "PALETAS",
         texto_alternativo: "PALETAS",
         descripcion_producto: "Son dulces duros montados en un palillo, disponibles en una amplia variedad de sabores frutales y colores, ideales para refrescar."
     },
     {
-        imagen: "../proyecto palomo dul/IMG/rockaleta.jpg",
+        imagen: "/IMG/rockaleta.jpg",
         nombre_producto: "ROCALETA",
         texto_alternativo: "ROCALETA",
         descripcion_producto: "Una paleta de caramelo de capas múltiples, conocida por su centro de chicle y su sabor que va de picante a dulce en cada nivel."
     },
     {
-        imagen: "../proyecto palomo dul/IMG/takis.jpg",
+        imagen: "/IMG/takis.jpg",
         nombre_producto: "TAKIS",
         texto_alternativo: "TAKIS",
         descripcion_producto: "Botanas de tortilla de maíz enrollada y frita, famosas por su intenso sabor a chile y limón, y su extrema crocancia."
     },
     {
-        imagen: "../proyecto palomo dul/IMG/big mix.jpg",
+        imagen: "/IMG/big mix.jpg",
         nombre_producto: "BIG MIX",
         texto_alternativo: "BIG MIX",
         descripcion_producto: "Una bolsa que contiene una mezcla variada de diferentes tipos de botanas, ofreciendo una combinación de sabores salados, picosos y crujientes."
     },
     {
-        imagen: "../proyecto palomo dul/IMG/kacang.jpg",
+        imagen: "/IMG/kacang.jpg",
         nombre_producto: "KACANG",
         texto_alternativo: "KACANG",
         descripcion_producto: "Cacahuates fritos con una capa crujiente y salada, perfectos como snack o acompañamiento de bebidas, con un distintivo sabor a especias."
@@ -103,10 +103,10 @@ function crearHtmlProducto() {
                 <img src="${img}" alt="${alt}" class="span_img">
                 <h1 class="span_title">${marca}</h1>
                     <div class="span_like" id="span_like_${contadorGeneral}" onclick="mostrarLike()">
-                        <img src="../proyecto palomo dul/IMG/Like_1.png" alt="like" class="span_like" id="img_like_${contadorGeneral}">
+                        <img src="/IMG/Like_1.png" alt="like" class="span_like" id="img_like_${contadorGeneral}">
                     </div>
                     <div class="span_dislike" id="span_dislike_${contadorGeneral}" onclick="mostrarDislike()">
-                        <img src="../proyecto palomo dul/IMG/Dislike_1.png" alt="Dislike" class="span_dislike" id="img_dislike_${contadorGeneral}">
+                        <img src="/IMG/Dislike_1.png" alt="Dislike" class="span_dislike" id="img_dislike_${contadorGeneral}">
                     </div>
 
                 <div class="span_btn"><a href="#stm-modal-${contadorGeneral}" class="stm-style-1">VER PRODUCTO</a></div>
@@ -176,8 +176,8 @@ function mostrarLike() {
         const like_1 = document.getElementById(`span_like_${contador_Likes}`);
         const img_1 = document.getElementById(`img_like_${contador_Likes}`);
 
-        const IMG_LIKE_ORIGINAL = "../IMG/Like_1.png"
-        const IMG_LIKE_REEMPLAZO = "../IMG/Like_2.png";
+        const IMG_LIKE_ORIGINAL = "/IMG/Like_1.png"
+        const IMG_LIKE_REEMPLAZO = "/IMG/Like_2.png";
 
         like_1.addEventListener('click', () => {
             click++;
